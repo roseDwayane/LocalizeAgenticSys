@@ -1,0 +1,3 @@
+[submodule "00_SCHOLAR"]
+	path = 00_SCHOLAR
+	url = https://github.com/roseDwayane/SCHOLAR.git
