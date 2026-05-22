@@ -1,0 +1,7 @@
+# Session-current state — ad-hoc, regeneratable, never commit
+.state/
+
+# Noise inside logs (keep the structured outputs, drop the scratch)
+.logs/**/*.tmp
+.logs/**/*.swp
+.logs/**/*.bak
