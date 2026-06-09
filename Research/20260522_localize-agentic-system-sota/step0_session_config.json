@@ -1,0 +1,70 @@
+{
+  "session_id": "20260522",
+  "topic": "How to build a state-of-the-art localized agentic system",
+  "topic_original": "如何建造最先進的 localize agentic system？",
+  "topic_slug": "localize-agentic-system-sota",
+  "timestamp": "2026-05-22T13:48:43+08:00",
+  "current_step": 6,
+  "pico": {
+    "population": "Local / on-device AI agent systems (open-source LLM-based agents running on consumer or edge hardware, including frameworks such as Claude Code, OpenClaw / OpenHands, ReAct, AutoGen, Cline, Aider, and self-hosted LLM stacks)",
+    "intervention": "Architectural patterns and engineering practices that constitute a state-of-the-art agentic system — context engineering, harness engineering, extension mechanisms (skills / tools / MCP / hooks / subagents), planning & reasoning loops, memory / state management, sandboxing & tool execution, and local model inference (quantization, LoRA, speculative decoding)",
+    "comparison": "Cloud-hosted frontier agents (Claude.ai, GPT agents, Devin), naive single-shot LLM pipelines, and earlier ReAct / AutoGPT-style baselines",
+    "outcome": "Task success rate on agent benchmarks (SWE-bench, WebArena, GAIA, AgentBench), context-window utilization & cost, latency on local hardware, tool-use reliability, autonomy depth (steps without human intervention), privacy & data locality, and reproducibility / ablation of architectural components",
+    "setting": "Local developer workstations, edge devices, and privacy-sensitive enterprise environments; open-source ecosystem (GitHub, HuggingFace, arXiv)",
+    "timeframe": "2023-2026 (with emphasis on 2024-2026 for SOTA agent architectures and context-engineering practices)"
+  },
+  "source_urls": [],
+  "queries": [
+    {
+      "id": "Q1",
+      "strategy": "Core terms + Population (with named systems)",
+      "query": "(\"LLM agent\" OR \"agentic system\" OR \"AI agent\" OR \"Claude Code\" OR \"OpenClaw\" OR \"hermes-agent\") AND (\"local\" OR \"on-device\" OR \"self-hosted\" OR \"open-source\") AND (architecture OR framework OR design)",
+      "rationale": "Direct hit on locally-deployable LLM agent architectures, with three reference systems (Claude Code, OpenClaw, hermes-agent) explicitly named to anchor the search around the user's known references"
+    },
+    {
+      "id": "Q2",
+      "strategy": "Synonyms + Alternative terminology",
+      "query": "(\"autonomous agent\" OR \"tool-using LLM\" OR \"LLM-based agent\" OR \"language agent\") AND (\"ReAct\" OR \"planning\" OR \"tool use\" OR \"function calling\") AND (\"open source\" OR \"edge\" OR \"private\")",
+      "rationale": "Catches papers using older / adjacent terminology — 'autonomous agent', 'tool-using LLM', 'language agent' — that frequently describe the same systems under different names"
+    },
+    {
+      "id": "Q3",
+      "strategy": "Mechanism + Theoretical basis",
+      "query": "(\"context engineering\" OR \"harness engineering\" OR \"prompt engineering for agents\") AND (\"context window\" OR \"long context\" OR \"memory\" OR \"context management\") AND (LLM OR agent)",
+      "rationale": "Finds the underlying engineering principles — how SOTA agents manage limited context, memory, and harness behavior — which is the central design problem of agentic systems"
+    },
+    {
+      "id": "Q4",
+      "strategy": "Methodology + Evaluation (incl. industry tech reports)",
+      "query": "(\"agent benchmark\" OR \"SWE-bench\" OR \"WebArena\" OR \"GAIA\" OR \"AgentBench\" OR \"OSWorld\") AND (\"open-source\" OR \"local\" OR \"open-weights\" OR \"Claude Code\" OR \"OpenClaw\" OR \"hermes-agent\") AND (evaluation OR ablation OR benchmark OR \"technical report\" OR \"engineering blog\")",
+      "rationale": "Targets empirical evidence — benchmark results, ablation studies, and industry technical reports / engineering blogs (Anthropic, OpenAI, HuggingFace, GitHub) comparing open-weights / local agents to frontier baselines"
+    },
+    {
+      "id": "Q5",
+      "strategy": "Cross-disciplinary + Adjacent fields",
+      "query": "(\"Model Context Protocol\" OR MCP OR \"tool integration\" OR \"agent extensibility\") AND (sandbox OR \"code execution\" OR \"computer use\" OR \"browser agent\") AND (LLM OR agent OR \"Claude Code\" OR \"OpenClaw\" OR \"hermes-agent\" OR \"open weights\")",
+      "rationale": "Broadens to ecosystem-level extension mechanisms — MCP, sandboxes, computer-use, browser agents — which are the practical components that turn a chat LLM into a working agentic system, again anchored on the three reference systems"
+    }
+  ],
+  "source_scope": {
+    "include_peer_reviewed": true,
+    "include_arxiv_preprints": true,
+    "include_industry_tech_blogs": true,
+    "industry_sources_examples": [
+      "anthropic.com",
+      "openai.com",
+      "huggingface.co/blog",
+      "github.blog",
+      "code.claude.com/docs",
+      "research.google",
+      "deepmind.google"
+    ]
+  },
+  "anchor_systems": [
+    "Claude Code",
+    "OpenClaw",
+    "hermes-agent"
+  ],
+  "checkpoint_1_approved": true,
+  "checkpoint_1_user_notes": "PICO accurate. Add Claude Code, OpenClaw, hermes-agent to queries. Include industry tech blogs. Timeframe 2023-2026 OK."
+}

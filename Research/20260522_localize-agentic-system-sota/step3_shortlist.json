@@ -1,0 +1,2871 @@
+{
+  "session_id": "20260522",
+  "topic": "How to build a state-of-the-art localized agentic system",
+  "topic_slug": "localize-agentic-system-sota",
+  "screening_timestamp": "2026-05-22T15:30:00+08:00",
+  "screening_config": {
+    "threshold": 3.5,
+    "weights": {
+      "relevance": 0.5,
+      "quality": 0.3,
+      "recency_impact": 0.2
+    },
+    "tier_boundaries": {
+      "tier_1": 4.5,
+      "tier_2": 4.0,
+      "tier_3": 3.5
+    }
+  },
+  "summary": {
+    "total_screened": 62,
+    "included": 58,
+    "borderline": 4,
+    "excluded": 0,
+    "inclusion_rate": "93.5%",
+    "tier_counts": {
+      "tier_1": 18,
+      "tier_2": 26,
+      "tier_3": 14
+    },
+    "manually_included_at_checkpoint_2": [
+      "paper_051",
+      "paper_052"
+    ]
+  },
+  "papers": [
+    {
+      "id": "paper_005",
+      "title": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "authors": [
+        "Xingyao Wang",
+        "Boxuan Li",
+        "Yufan Song",
+        "Frank F. Xu",
+        "Xiangru Tang",
+        "Mingchen Zhuge",
+        "Jiayi Pan",
+        "Yueqi Song",
+        "Bowen Li",
+        "Jaskirat Singh",
+        "Hoang H. Tran",
+        "Fuqiang Li",
+        "Ren Ma",
+        "Mingzhang Zheng",
+        "Bill Qian",
+        "Yanjun Shao",
+        "Niklas Muennighoff",
+        "Yizhe Zhang",
+        "Binyuan Hui",
+        "Junyang Lin",
+        "Robert Brennan",
+        "Hao Peng",
+        "Heng Ji",
+        "Graham Neubig"
+      ],
+      "year": 2024,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2407.16741",
+      "abstract": "Software is one of the most powerful tools that we humans have at our disposal; it allows a skilled programmer to interact with the world in complex and profound ways. At the same time, thanks to improvements in large language models (LLMs), there has also been a rapid development in AI agents that interact with and affect change in their surrounding environments. In this paper, we introduce OpenHands (f.k.a. OpenDevin), a platform for the development of powerful and flexible AI agents that interact with the world in similar ways to those of a human developer: by writing code, interacting with a command line, and browsing the web. We describe how the platform allows for the implementation of new agents, safe interaction with sandboxed environments for code execution, coordination between multiple agents, and incorporation of evaluation benchmarks. Based on our currently incorporated benchmarks, we perform an evaluation of agents over 15 challenging tasks, including software engineering (e.g., SWE-BENCH) and web browsing (e.g., WEBARENA), among others. Released under the permissive MIT license, OpenHands is a community project spanning academia and industry with more than 2.1K contributions from over 188 contributors.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2407.16741",
+      "references": [
+        "paper_001",
+        "paper_002",
+        "paper_003"
+      ],
+      "cited_by": [
+        "paper_006",
+        "paper_018",
+        "paper_028",
+        "paper_032",
+        "paper_033",
+        "paper_034",
+        "paper_055",
+        "paper_057"
+      ],
+      "is_seed_paper": true,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 8,
+        "out_degree": 3,
+        "is_hub": true,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 5,
+        "recency_impact": 5,
+        "composite": 5.0,
+        "tier": 1,
+        "rationale": "Hub paper (in-degree 8); canonical open-source agentic platform with sandboxed execution and multi-benchmark eval. Direct anchor system for the PICO."
+      }
+    },
+    {
+      "id": "paper_032",
+      "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
+      "authors": [
+        "Jiahang Lin",
+        "Shichun Liu",
+        "Chengjun Pan",
+        "Lizhi Lin",
+        "Shihan Dou",
+        "Zhiheng Xi",
+        "Xuanjing Huang",
+        "Hang Yan",
+        "Zhenhua Han",
+        "Tao Gui",
+        "Yu-Gang Jiang"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2604.25850",
+      "abstract": "Proposes Agentic Harness Engineering (AHE) addressing harness automation through component observability, experience observability, and decision observability. Achieves 77.0% pass@1 on Terminal-Bench 2, surpassing human-designed harness Codex-CLI at 71.9%.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2604.25850",
+      "references": [
+        "paper_002",
+        "paper_005",
+        "paper_028"
+      ],
+      "cited_by": [],
+      "is_seed_paper": true,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": true,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 5,
+        "recency_impact": 5,
+        "composite": 5.0,
+        "tier": 1,
+        "rationale": "Hub paper; defines harness engineering as discipline; Terminal-Bench 2 77.0% beats human-designed Codex-CLI. Crown empirical paper for harness pillar."
+      }
+    },
+    {
+      "id": "paper_011",
+      "title": "A Survey on Model Context Protocol: Architecture, State-of-the-art, Challenges and Future Directions",
+      "authors": [
+        "Partha Pratim Ray"
+      ],
+      "year": 2025,
+      "journal": "Techrxiv",
+      "doi": "10.36227/techrxiv.174495492.22752319/v1",
+      "url": "https://openalex.org/W4409562197",
+      "abstract": "The rapid proliferation of large-language-model services is constrained by three long-standing barriers: stateless integration interfaces, ad-hoc security controls, and the absence of a unified mechanism for injecting rich, multi-turn context. The Model Context Protocol (MCP) has been proposed to overcome these limitations through a session-oriented, JSON-RPC framework that allows LLMs to negotiate capabilities, invoke external tools, and retrieve contextual resources under fine-grained, OAuth 2.1-compliant access control.",
+      "citation_count": 25,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4409562197",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_012",
+        "paper_013",
+        "paper_014",
+        "paper_015",
+        "paper_042",
+        "paper_043",
+        "paper_047",
+        "paper_048",
+        "paper_050"
+      ],
+      "is_seed_paper": true,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 9,
+        "out_degree": 0,
+        "is_hub": true,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 5,
+        "composite": 4.7,
+        "tier": 1,
+        "rationale": "Hub paper (in-degree 9); MCP foundational survey with 25 cites. The reference work for the protocol layer of agentic systems."
+      }
+    },
+    {
+      "id": "paper_028",
+      "title": "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems",
+      "authors": [
+        "Jiacheng Liu",
+        "Xiaohan Zhao",
+        "Xinyi Shang",
+        "Zhiqiang Shen"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2604.14228",
+      "abstract": "Technical analysis of Claude Code architecture from publicly available TypeScript source code, identifying five human values (decision authority, safety, reliable execution, capability amplification, contextual adaptability) traced through thirteen design principles. Core system is a simple while-loop that calls the model, runs tools, and repeats.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2604.14228",
+      "references": [
+        "paper_001",
+        "paper_005",
+        "paper_008"
+      ],
+      "cited_by": [
+        "paper_018",
+        "paper_029",
+        "paper_032",
+        "paper_033",
+        "paper_037"
+      ],
+      "is_seed_paper": true,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 5,
+        "out_degree": 3,
+        "is_hub": true,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 5,
+        "composite": 4.7,
+        "tier": 1,
+        "rationale": "Hub paper; source-code-level analysis of Claude Code architecture. Directly answers 'how is the anchor system built'."
+      }
+    },
+    {
+      "id": "paper_002",
+      "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "authors": [
+        "Carlos Jimenez-Gomez",
+        "John Yang",
+        "Alexander Wettig",
+        "Shunyu Yao",
+        "Kexin Pei",
+        "Ofir Press",
+        "Karthik Narasimhan"
+      ],
+      "year": 2023,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2310.06770",
+      "url": "https://arxiv.org/abs/2310.06770",
+      "abstract": "Language models have advanced faster than our capacity to assess them properly. Yet evaluating frontier capabilities requires studying real-world software engineering as a rich, sustainable testbed. This work introduces SWE-bench: 2,294 problems from GitHub issues and pull requests across 12 Python repositories. Given a codebase and issue description, models must edit code to resolve it. Solving these issues frequently requires understanding and coordinating changes across multiple functions, classes, and files, calling for complex reasoning.",
+      "citation_count": 37,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4387561453",
+      "pubmed_id": null,
+      "arxiv_id": "2310.06770",
+      "references": [],
+      "cited_by": [
+        "paper_003",
+        "paper_005",
+        "paper_006",
+        "paper_018",
+        "paper_023",
+        "paper_029",
+        "paper_032",
+        "paper_033",
+        "paper_034",
+        "paper_055"
+      ],
+      "is_seed_paper": true,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 10,
+        "out_degree": 0,
+        "is_hub": true,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 5,
+        "recency_impact": 5,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Hub paper (highest in-degree 10); gold-standard coding-agent benchmark on real GitHub issues."
+      }
+    },
+    {
+      "id": "paper_003",
+      "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+      "authors": [
+        "John Yang",
+        "Carlos Jimenez-Gomez",
+        "Alexander Wettig",
+        "K. Lieret",
+        "Shunyu Yao",
+        "Karthik Narasimhan",
+        "Ofir Press"
+      ],
+      "year": 2024,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2405.15793",
+      "url": "https://arxiv.org/abs/2405.15793",
+      "abstract": "Language model agents benefit from specialized software applications like integrated development environments for complex engineering tasks. This work investigates how interface design affects agent performance. SWE-agent is presented as a system enabling LM agents to autonomously use computers for software engineering tasks. Its custom agent-computer interface significantly enhances agents' ability to create, edit, and navigate code and repositories while executing tests.",
+      "citation_count": 24,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4399114781",
+      "pubmed_id": null,
+      "arxiv_id": "2405.15793",
+      "references": [
+        "paper_002"
+      ],
+      "cited_by": [
+        "paper_005",
+        "paper_018",
+        "paper_023",
+        "paper_032"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 4,
+        "out_degree": 1,
+        "is_hub": true,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Hub paper; introduced the agent-computer interface concept — foundational to harness design."
+      }
+    },
+    {
+      "id": "paper_006",
+      "title": "The OpenHands Software Agent SDK: A Composable and Extensible Foundation for Production Agents",
+      "authors": [
+        "Xingyao Wang",
+        "Simon Rosenberg",
+        "Juan Michelini",
+        "Calvin Smith",
+        "Hoang Tran",
+        "Engel Nyst",
+        "Rohit Malhotra",
+        "Xuhui Zhou",
+        "Valerie Chen",
+        "Robert Brennan",
+        "Graham Neubig"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2511.03690",
+      "abstract": "Agents are now used widely in the process of software development, but building production-ready software engineering agents is a complex task. Deploying software agents effectively requires flexibility in implementation and experimentation, reliable and secure execution, and interfaces for users to interact with agents. In this paper, we present the OpenHands Software Agent SDK, a toolkit for implementing software development agents that satisfy these desiderata. This toolkit is a complete architectural redesign of the agent components of the popular OpenHands framework for software development agents. To achieve flexibility, we design a simple interface for implementing agents that requires only a few lines of code in the default case, but is easily extensible to more complex full-featured agents with features such as custom tools, memory management, and more. For security and reliability, it delivers seamless local-to-remote execution portability, integrated REST/WebSocket services. For interaction with human users, it can connect directly to a variety of interfaces, such as visual workspaces (VSCode, VNC, browser), command-line interfaces, and APIs. Compared with existing SDKs from OpenAI, Claude and Google, OpenHands uniquely integrates native sandboxed execution, lifecycle control, model-agnostic multi-LLM routing, and built-in security analysis.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2511.03690",
+      "references": [
+        "paper_005",
+        "paper_002"
+      ],
+      "cited_by": [
+        "paper_032"
+      ],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 1,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Local-to-remote portability, native sandboxed execution, model-agnostic routing — direct production-grade local-agent blueprint."
+      }
+    },
+    {
+      "id": "paper_008",
+      "title": "Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering",
+      "authors": [
+        "Chenyu Zhou",
+        "Huacan Chai",
+        "Wenteng Chen",
+        "Zihan Guo",
+        "Rong Shan",
+        "Yuanyi Song",
+        "Tianyi Xu",
+        "Yingxuan Yang",
+        "Aofan Yu",
+        "Weiming Zhang",
+        "Congming Zheng",
+        "Jiachen Zhu",
+        "Zeyu Zheng",
+        "Zhuosheng Zhang",
+        "Xingyu Lou",
+        "Changwang Zhang",
+        "Zhihui Fu",
+        "Jun Wang",
+        "Weiwen Liu",
+        "Jianghao Lin",
+        "Weinan Zhang"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2604.08224",
+      "abstract": "Reviews how agent capabilities are externalized into memory stores, reusable skills, interaction protocols, and infrastructure rather than encoded in model weights, analyzing this shift through cognitive artifact theory.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2604.08224",
+      "references": [
+        "paper_001"
+      ],
+      "cited_by": [
+        "paper_018",
+        "paper_028"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 2,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Unified review of all four PICO extension dimensions (memory / skills / protocols / harness). Near-perfect framing paper."
+      }
+    },
+    {
+      "id": "paper_020",
+      "title": "The Complexity Trap: Simple Observation Masking Is as Efficient as LLM Summarization for Agent Context Management",
+      "authors": [
+        "Tobias Lindenbauer",
+        "Igor Slinko",
+        "Ludwig Felder",
+        "Egor Bogomolov",
+        "Yaroslav Zharov"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2508.21433",
+      "abstract": "Demonstrates that simple observation masking matches LLM summarization performance while reducing costs by 50%, with a hybrid approach achieving further 7-11% cost reductions on SWE-bench tasks.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2508.21433",
+      "references": [
+        "paper_002"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Strong ablation on SWE-bench; 'simpler beats fancier' insight — directly relevant for local-cost-sensitive SOTA."
+      }
+    },
+    {
+      "id": "paper_021",
+      "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+      "authors": [
+        "Qizheng Zhang",
+        "Changran Hu",
+        "Shubhangi Upasani",
+        "Boyuan Ma",
+        "Fenglu Hong",
+        "Vamsidhar Kamanuru",
+        "Jay Rainton",
+        "Chen Wu",
+        "Mengmeng Ji",
+        "Hanchen Li",
+        "Urmish Thakker",
+        "James Zou",
+        "Kunle Olukotun"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2510.04618",
+      "abstract": "Framework treating contexts as evolving playbooks preventing collapse through incremental updates, achieving +10.6% on agents and +8.6% on finance benchmarks while reducing adaptation latency.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2510.04618",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Coins 'agentic context engineering' as a term; +10.6% gain on agents. Central reference for context-engineering pillar."
+      }
+    },
+    {
+      "id": "paper_022",
+      "title": "Git Context Controller: Manage the Context of LLM-based Agents like Git",
+      "authors": [
+        "Junde Wu",
+        "Minhao Hu",
+        "Jiayuan Zhu",
+        "Jiazhen Pan",
+        "Yuyuan Liu",
+        "Min Xu",
+        "Yueming Jin"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2508.00031",
+      "abstract": "Structured context management framework inspired by version control enabling milestone checkpointing, exploration branching, and hierarchical retrieval, improving SWE-Bench resolution by 13%.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2508.00031",
+      "references": [
+        "paper_002"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Concrete +13% SWE-bench improvement with version-controlled context — a strong harness-mechanism example."
+      }
+    },
+    {
+      "id": "paper_029",
+      "title": "Decoding the Configuration of AI Coding Agents: Insights from Claude Code Projects",
+      "authors": [
+        "Helio Victor F. Santos",
+        "Vitor Costa",
+        "Joao Eduardo Montandon",
+        "Marco Tulio Valente"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2511.09268",
+      "abstract": "Empirical study of 328 configuration files from Claude Code projects identifying software engineering concerns and practices specified in agent configurations, with particular emphasis on specifying the architecture the agent should follow.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2511.09268",
+      "references": [
+        "paper_002",
+        "paper_028"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Empirical study of 328 Claude Code config files — directly evidence-based on the anchor system's extension mechanism."
+      }
+    },
+    {
+      "id": "paper_031",
+      "title": "Code as Agent Harness",
+      "authors": [
+        "Xuying Ning",
+        "Katherine Tieu",
+        "Dongqi Fu",
+        "Tianxin Wei",
+        "Zihao Li",
+        "Yuanchen Bei",
+        "Jiaru Zou",
+        "Mengting Ai",
+        "Zhining Liu",
+        "Ting-Wei Li",
+        "Lingjie Chen",
+        "Yanjun Zhao",
+        "Ke Yang",
+        "Bingxuan Li",
+        "Cheng Qian",
+        "Gaotang Li",
+        "Xiao Lin",
+        "Zhichen Zeng",
+        "Ruizhong Qiu",
+        "Sirui Chen",
+        "Yifan Sun",
+        "Xiyuan Yang",
+        "Ruida Wang",
+        "Rui Pan",
+        "Chenyuan Yang",
+        "Dylan Zhang",
+        "Liri Fang",
+        "Zikun Cui",
+        "Yang Cao",
+        "Pan Chen",
+        "Dorothy Sun",
+        "Ren Chen",
+        "Mahesh Srinivasan",
+        "Nipun Mathur",
+        "Yinglong Xia",
+        "Hong Li",
+        "Hong Yan",
+        "Pan Lu",
+        "Lingming Zhang",
+        "Tong Zhang",
+        "Hanghang Tong",
+        "Jingrui He"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2605.18747",
+      "abstract": "Code increasingly serves as an operational substrate for agent reasoning, acting, environment modeling, and execution-based verification. Survey examining code as infrastructure for AI agents across three layers: harness interface, mechanisms (planning, memory, tool use), and multi-agent scaling.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2605.18747",
+      "references": [
+        "paper_001",
+        "paper_005",
+        "paper_028"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Three-layer survey (harness interface / mechanisms / multi-agent scaling) — clean framing for SOTA review structure."
+      }
+    },
+    {
+      "id": "paper_033",
+      "title": "Natural-Language Agent Harnesses",
+      "authors": [
+        "Linyue Pan",
+        "Lexiao Zou",
+        "Shuo Guo",
+        "Jingchen Ni",
+        "Hai-Tao Zheng"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2603.25723",
+      "abstract": "Introduces Natural-Language Agent Harnesses (NLAHs) as editable documents that describe run-level harness policy and Intelligent Harness Runtime (IHR) that interprets them. Achieves comparable task outcomes to code-based implementations while exposing much shorter static harness policies.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2603.25723",
+      "references": [
+        "paper_002",
+        "paper_005",
+        "paper_028"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "NLAH + Intelligent Harness Runtime — directly addresses 'skills as natural-language extensions' pattern."
+      }
+    },
+    {
+      "id": "paper_036",
+      "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
+      "authors": [
+        "Sahil Sen",
+        "Akhil Kasturi",
+        "Elias Lumer",
+        "Anmol Gulati",
+        "Vamse Kumar Subbiah"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2605.15184",
+      "abstract": "Empirical study comparing grep and vector retrieval on LongMemEval using Claude Code, Codex, and Gemini CLI harnesses. Finds grep generally yields higher accuracy than vector retrieval while scores depend strongly on which harness and tool-calling style is used.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2605.15184",
+      "references": [
+        "paper_028"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Compares grep vs vector retrieval across Claude Code / Codex / Gemini CLI on LongMemEval — direct harness-comparison evidence."
+      }
+    },
+    {
+      "id": "paper_038",
+      "title": "Inside the Scaffold: A Source-Code Taxonomy of Coding Agent Architectures",
+      "authors": [
+        "Benjamin Rombaut"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2604.03515",
+      "abstract": "LLM-based coding agents can localize bugs, generate patches, and run tests with diminishing human oversight, yet the scaffolding code that surrounds the language model remains poorly understood.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2604.03515",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Taxonomy of scaffolding code — the missing structural reference for 'how is a coding agent built'."
+      }
+    },
+    {
+      "id": "paper_046",
+      "title": "Herding CATs: ALARA for Agent Harness Engineering in Portable Composable Multi-Agent Teams",
+      "authors": [
+        "Christopher J. Agostino",
+        "Nayan D'Souza"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2603.20380",
+      "abstract": "Introduces context-agent-tool (CAT) data layer applying ALARA principle, allowing users to directly declare tool access for each agent. Evaluates 22 locally-hosted models across 115 practical tasks in approximately 2500 total executions.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2603.20380",
+      "references": [
+        "paper_007"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Evaluates 22 locally-hosted models across 115 tasks — directly tests the 'local' pillar of the PICO."
+      }
+    },
+    {
+      "id": "paper_061",
+      "title": "OAgents: An Empirical Study of Building Effective Agents",
+      "authors": [
+        "He Zhu",
+        "Tianrui Qin",
+        "King Zhu",
+        "Heyuan Huang",
+        "Yeyi Guan",
+        "Jinxiang Xia",
+        "Yi Yao",
+        "Hanhao Li",
+        "Ningning Wang",
+        "Pai Liu",
+        "Tianhao Peng",
+        "Xin Gui",
+        "Xiaowan Li",
+        "Yuhui Liu",
+        "Yuchen Eleanor Jiang",
+        "Jun Wang",
+        "Changwang Zhang",
+        "Xiangru Tang",
+        "Ge Zhang",
+        "Jian Yang",
+        "Minghao Liu",
+        "Xitong Gao",
+        "Jiaheng Liu",
+        "Wangchunshu Zhou"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2506.15741",
+      "abstract": "Systematic empirical study examining agent component design choices on GAIA and BrowseComp benchmarks. We find that the lack of a standard evaluation protocol makes previous works non-reproducible, with significant variance between random runs.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2506.15741",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.5,
+        "tier": 1,
+        "rationale": "Systematic ablation of agent component design on GAIA + BrowseComp; calls out reproducibility gap — methodologically valuable."
+      }
+    },
+    {
+      "id": "paper_009",
+      "title": "Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks",
+      "authors": [
+        "Adam Fourney",
+        "Gagan Bansal",
+        "Hussein Mozannar",
+        "Cheng Tan",
+        "Eduardo Salinas",
+        "Erkang Zhu",
+        "Friederike Niedtner",
+        "Grace Proebsting",
+        "Griffin Bassman",
+        "Jack Gerrits",
+        "Jacob Alber",
+        "Peter Chang",
+        "Ricky Loynd",
+        "Robert West",
+        "Victor Dibia",
+        "Ahmed Hassan Awadallah",
+        "Ece Kamar",
+        "Rafah Hosn",
+        "Saleema Amershi"
+      ],
+      "year": 2024,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2411.04468",
+      "url": "https://arxiv.org/abs/2411.04468",
+      "abstract": "Modern AI agents powered by foundation models promise to enhance productivity and augment human capabilities. To realize this vision, agents must effectively plan, perform multi-step reasoning, respond to observations, recover from errors, and complete complex tasks across diverse scenarios. Magentic-One is introduced as a high-performing, open-source agentic system using multi-agent architecture with an Orchestrator lead agent that plans, tracks progress, and re-plans upon errors. Specialized agents handle web browsing, file navigation, and Python code execution as needed. Magentic-One achieves competitive performance on three diverse benchmarks (GAIA, AssistantBench, WebArena) without modification to core capabilities, demonstrating progress toward generalist agentic systems.",
+      "citation_count": 13,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4404396586",
+      "pubmed_id": null,
+      "arxiv_id": "2411.04468",
+      "references": [
+        "paper_001"
+      ],
+      "cited_by": [
+        "paper_017",
+        "paper_025",
+        "paper_056"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 3,
+        "out_degree": 1,
+        "is_hub": true,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 5,
+        "recency_impact": 4,
+        "composite": 4.3,
+        "tier": 2,
+        "rationale": "Hub paper; multi-benchmark eval across GAIA/AssistantBench/WebArena. Microsoft's open-source generalist agent."
+      }
+    },
+    {
+      "id": "paper_001",
+      "title": "A survey on large language model based autonomous agents",
+      "authors": [
+        "Lei Wang",
+        "Chen Ma",
+        "Xueyang Feng",
+        "Zeyu Zhang",
+        "Hao Yang",
+        "Jingsen Zhang",
+        "Zhiyuan Chen",
+        "Jiakai Tang",
+        "Xu Chen",
+        "Yankai Lin",
+        "Wayne Xin Zhao",
+        "Zhewei Wei",
+        "Ji-Rong Wen"
+      ],
+      "year": 2024,
+      "journal": "Frontiers of Computer Science",
+      "doi": "10.1007/s11704-024-40231-1",
+      "url": "https://openalex.org/W4393065402",
+      "abstract": "Autonomous agents have long been a research focus in academic and industry communities. Previous research often focuses on training agents with limited knowledge within isolated environments, which diverges significantly from human learning processes. Recently, through the acquisition of vast amounts of Web knowledge, large language models (LLMs) have shown potential in human-level intelligence, leading to a surge in LLM-based autonomous agents.",
+      "citation_count": 1058,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4393065402",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_005",
+        "paper_008",
+        "paper_018",
+        "paper_026",
+        "paper_028",
+        "paper_032"
+      ],
+      "is_seed_paper": true,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 6,
+        "out_degree": 0,
+        "is_hub": true,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 5,
+        "composite": 4.2,
+        "tier": 2,
+        "rationale": "Hub paper (1058 cites); field's go-to LLM-agent survey. Broad-scope so slightly tangent on intervention axis."
+      }
+    },
+    {
+      "id": "paper_018",
+      "title": "Context Engineering for Multi-Agent LLM Code Assistants Using Elicit, NotebookLM, ChatGPT, and Claude Code",
+      "authors": [
+        "Muhammad Haseeb"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2508.08322",
+      "abstract": "Proposes a novel workflow combining intent translation, semantic literature retrieval, document synthesis, and multi-agent code generation to improve accuracy in complex software projects, demonstrating superior performance compared to single-agent baselines. The workflow uses Elicit-powered semantic retrieval, NotebookLM synthesis, and Claude Code multi-agent system.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2508.08322",
+      "references": [
+        "paper_001",
+        "paper_002",
+        "paper_005",
+        "paper_008",
+        "paper_028"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 5,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 3,
+        "recency_impact": 4,
+        "composite": 4.2,
+        "tier": 2,
+        "rationale": "Direct Claude Code multi-agent context-engineering workflow; methodology is light but topically central."
+      }
+    },
+    {
+      "id": "paper_027",
+      "title": "Active Context Compression: Autonomous Memory Management in LLM Agents",
+      "authors": [
+        "Nikhil Verma"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2601.07190",
+      "abstract": "Agent-centric architecture enabling autonomous consolidation of learnings and history pruning, achieving 22.7% token reduction while maintaining task performance on SWE-bench instances.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2601.07190",
+      "references": [
+        "paper_002"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 3,
+        "recency_impact": 4,
+        "composite": 4.2,
+        "tier": 2,
+        "rationale": "22.7% token reduction with maintained SWE-bench performance — concrete memory-management contribution."
+      }
+    },
+    {
+      "id": "paper_037",
+      "title": "On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents",
+      "authors": [
+        "Jai Lal Lulla",
+        "Seyedmoein Mohsenimofidi",
+        "Matthias Galster",
+        "Jie M. Zhang",
+        "Sebastian Baltes",
+        "Christoph Treude"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2601.20404",
+      "abstract": "Study of 10 repositories and 124 PRs shows AGENTS.md presence associated with a lower median runtime (Δ28.64%) and reduced output token consumption (Δ16.58%), while maintaining comparable task completion.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2601.20404",
+      "references": [
+        "paper_028"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 3,
+        "recency_impact": 4,
+        "composite": 4.2,
+        "tier": 2,
+        "rationale": "Quantifies AGENTS.md effect (-28.64% runtime, -16.58% tokens); small-N (10 repos) tempers quality."
+      }
+    },
+    {
+      "id": "paper_059",
+      "title": "PAACE: A Plan-Aware Automated Agent Context Engineering Framework",
+      "authors": [
+        "Kamer Ali Yuksel"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2512.16970",
+      "abstract": "Framework optimizing multi-step agentic workflows through next-k-task relevance modeling and plan-structure analysis, achieving higher accuracy with reduced context load on multiple benchmarks.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2512.16970",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 5,
+        "quality": 3,
+        "recency_impact": 4,
+        "composite": 4.2,
+        "tier": 2,
+        "rationale": "Plan-aware context engineering — directly named PICO mechanism. Single-author preprint limits quality."
+      }
+    },
+    {
+      "id": "paper_015",
+      "title": "MCP-Universe: Benchmarking Large Language Models with Real-World Model Context Protocol Servers",
+      "authors": [
+        "Ziyang Luo",
+        "Zhiqi Shen",
+        "Wenzhuo Yang",
+        "Zirui Zhao",
+        "Prathyusha Jwalapuram",
+        "Amrita Saha",
+        "Doyen Sahoo",
+        "Silvio Savarese",
+        "Caiming Xiong",
+        "Junnan Li"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2508.14704",
+      "abstract": "Comprehensive benchmark evaluating LLMs through interaction with real-world MCP servers across six domains (Location Navigation, Repository Management, Financial Analysis, 3D Design, Browser Automation, Web Searching). Introduces execution-based evaluators and demonstrates significant performance limitations in state-of-the-art models including GPT-5, Grok-4, and Claude-4.0-Sonnet.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2508.14704",
+      "references": [
+        "paper_011"
+      ],
+      "cited_by": [
+        "paper_042"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 1,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Six-domain MCP benchmark with execution-based evaluators."
+      }
+    },
+    {
+      "id": "paper_016",
+      "title": "Survey on Evaluation of LLM-based Agents",
+      "authors": [
+        "Asaf Yehudai",
+        "Lilach Eden",
+        "Alan Li",
+        "Guy Uziel",
+        "Yilun Zhao",
+        "Roy Bar-Haim",
+        "Arman Cohan",
+        "Michal Shmueli-Scheuer"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2503.16416",
+      "url": "https://openalex.org/W4415289348",
+      "abstract": "LLM-based agents represent a paradigm shift in AI, enabling autonomous systems to plan, reason, and use tools while interacting with dynamic environments. This paper provides the first comprehensive survey of evaluation methods for these increasingly capable agents, analyzing the field across five perspectives including core LLM capabilities and application-specific benchmarks.",
+      "citation_count": 7,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4415289348",
+      "pubmed_id": null,
+      "arxiv_id": "2503.16416",
+      "references": [
+        "paper_001",
+        "paper_002"
+      ],
+      "cited_by": [
+        "paper_004",
+        "paper_017"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 2,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Five-perspective eval survey; complements paper_004."
+      }
+    },
+    {
+      "id": "paper_017",
+      "title": "SWE-bench Goes Live!",
+      "authors": [
+        "Linghao Zhang",
+        "Shilin He",
+        "Chaoyun Zhang",
+        "Yu Kang",
+        "Bowen Li",
+        "Chengxing Xie",
+        "Junhao Wang",
+        "Maoquan Wang",
+        "Yufan Huang",
+        "Shengyu Fu",
+        "Elsie Nallipogu",
+        "Qingwei Lin",
+        "Yingnong Dang",
+        "Saravan Rajmohan",
+        "Dongmei Zhang"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2505.23419",
+      "abstract": "SWE-bench-Live is presented as a live-updatable benchmark for evaluating LLMs on issue-resolving tasks. The initial release contains 1,319 tasks from real GitHub issues created since 2024, spanning 93 repositories with dedicated Docker images. An automated curation pipeline streamlines instance creation and environment setup. Evaluation of state-of-the-art agents reveals substantial performance gap compared to static benchmarks like SWE-bench, even under controlled evaluation conditions.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2505.23419",
+      "references": [
+        "paper_002",
+        "paper_003"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Live-updatable SWE-bench (1319 tasks, 93 repos) — addresses benchmark-saturation problem."
+      }
+    },
+    {
+      "id": "paper_019",
+      "title": "LoCoBench-Agent: An Interactive Benchmark for LLM Agents in Long-Context Software Engineering",
+      "authors": [
+        "Jielin Qiu",
+        "Zuxin Liu",
+        "Zhiwei Liu",
+        "Rithesh Murthy",
+        "Jianguo Zhang",
+        "Haolin Chen",
+        "Shiyu Wang",
+        "Ming Zhu",
+        "Liangwei Yang",
+        "Juntao Tan",
+        "Roshan Ram",
+        "Akshara Prabhakar",
+        "Tulika Awalgaonkar",
+        "Zixiang Chen",
+        "Zhepeng Cen",
+        "Cheng Qian",
+        "Shelby Heinecke",
+        "Weiran Yao",
+        "Silvio Savarese",
+        "Caiming Xiong",
+        "Huan Wang"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2511.13998",
+      "abstract": "Comprehensive framework for evaluating LLM agents in realistic long-context software workflows with 8,000 scenarios, specialized tools, and metrics across comprehension and efficiency dimensions.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2511.13998",
+      "references": [
+        "paper_002"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "8000-scenario long-context SE benchmark."
+      }
+    },
+    {
+      "id": "paper_023",
+      "title": "Haystack Engineering: Context Engineering for Heterogeneous and Agentic Long-Context Evaluation",
+      "authors": [
+        "Mufei Li",
+        "Dongqi Fu",
+        "Limei Wang",
+        "Si Zhang",
+        "Hanqing Zeng",
+        "Kaan Sancak",
+        "Ruizhong Qiu",
+        "Haoyu Wang",
+        "Xiaoxin He",
+        "Xavier Bresson",
+        "Yinglong Xia",
+        "Chonglin Sun",
+        "Pan Li"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2510.07414",
+      "abstract": "HaystackCraft benchmark constructed on Wikipedia hyperlink network evaluating agent robustness against realistic noisy contexts from biased retrievers and cascading agentic errors.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2510.07414",
+      "references": [
+        "paper_002",
+        "paper_003"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "HaystackCraft benchmark for cascading agentic errors."
+      }
+    },
+    {
+      "id": "paper_025",
+      "title": "Alita: Generalist Agent Enabling Scalable Agentic Reasoning with Minimal Predefinition and Maximal Self-Evolution",
+      "authors": [
+        "Jiahao Qiu",
+        "Xuan Qi",
+        "Tongcheng Zhang",
+        "Xinzhe Juan",
+        "Jiacheng Guo",
+        "Yifu Lu",
+        "Yimin Wang",
+        "Zixin Yao",
+        "Qihan Ren",
+        "Xun Jiang",
+        "Xing Zhou",
+        "Dongrui Liu",
+        "Ling Yang",
+        "Yue Wu",
+        "Kaixuan Huang",
+        "Shilong Liu",
+        "Hongru Wang",
+        "Mengdi Wang"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2505.20286",
+      "abstract": "Generalist agent with minimal predefinition and maximal self-evolution through autonomous capability construction. Alita achieves 75.15% pass@1 and 87.27% pass@3 accuracy on the GAIA benchmark validation dataset.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2505.20286",
+      "references": [
+        "paper_001",
+        "paper_009"
+      ],
+      "cited_by": [
+        "paper_056"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 1,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "GAIA 75.15% pass@1 — strong empirical contribution to autonomy depth."
+      }
+    },
+    {
+      "id": "paper_030",
+      "title": "Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine",
+      "authors": [
+        "Wenyi Wang",
+        "Piotr Piękos",
+        "Li Nanbo",
+        "Firas Laakom",
+        "Yimeng Chen",
+        "Mateusz Ostaszewski",
+        "Mingchen Zhuge",
+        "Jürgen Schmidhuber"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2510.21614",
+      "abstract": "Proposes Huxley-Gödel Machine using clade metric (CMP) aggregating benchmark performances of descendants of an agent. On SWE-bench Verified with GPT-5-mini achieves human-level performance, matching the best officially checked results.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2510.21614",
+      "references": [
+        "paper_002"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Self-improving SWE-bench Verified human-level result."
+      }
+    },
+    {
+      "id": "paper_034",
+      "title": "AIDev: Studying AI Coding Agents on GitHub",
+      "authors": [
+        "Hao Li",
+        "Haoxiang Zhang",
+        "Ahmed E. Hassan"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": "10.1145/3793302.3797249",
+      "url": "https://arxiv.org/abs/2602.09185",
+      "abstract": "Large-scale dataset aggregating 932,791 Agentic-PRs produced by five agents: OpenAI Codex, Devin, GitHub Copilot, Cursor, and Claude Code spanning 116,211 repositories and 72,189 developers.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2602.09185",
+      "references": [
+        "paper_002",
+        "paper_005"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "932K agentic PRs across Codex/Devin/Copilot/Cursor/Claude Code — largest empirical comparison."
+      }
+    },
+    {
+      "id": "paper_035",
+      "title": "Engineering Pitfalls in AI Coding Tools: An Empirical Study of Bugs in Claude Code, Codex, and Gemini CLI",
+      "authors": [
+        "Ruixin Zhang",
+        "Wuyang Dai",
+        "Hung Viet Pham",
+        "Gias Uddin",
+        "Jinqiu Yang",
+        "Song Wang"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2603.20847",
+      "abstract": "Analysis of 3.8K bugs in three coding tools shows more than 67% of the bugs are related to functionality. Root causes include API/integration errors (36.9%); most commonly observed symptoms reported by users are API errors (18.3%), terminal problems (14%).",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2603.20847",
+      "references": [
+        "paper_028"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "anchor_systems_search",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "3.8K bug analysis across Claude Code / Codex / Gemini CLI — direct failure-mode reference."
+      }
+    },
+    {
+      "id": "paper_041",
+      "title": "Agents in Software Engineering: Survey, Landscape, and Vision",
+      "authors": [
+        "Yanlin Wang",
+        "Wanjun Zhong",
+        "Yanxian Huang",
+        "Ensheng Shi",
+        "Min Yang",
+        "Jiachi Chen",
+        "Hui Li",
+        "Yuchi Ma",
+        "Qianxiang Wang",
+        "Zibin Zheng"
+      ],
+      "year": 2024,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2409.09030",
+      "abstract": "First comprehensive survey of LLM-based agent integration in software engineering, presenting framework with perception, memory, and action modules alongside current challenges and opportunities.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2409.09030",
+      "references": [
+        "paper_001",
+        "paper_002"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "First comprehensive SE-agents survey."
+      }
+    },
+    {
+      "id": "paper_042",
+      "title": "MCPToolBench++: A Large Scale AI Agent Model Context Protocol MCP Tool Use Benchmark",
+      "authors": [
+        "Shiqing Fan",
+        "Xichen Ding",
+        "Liang Zhang",
+        "Linjian Mo"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2508.07575",
+      "abstract": "Large-scale benchmark built on over 4,000 MCP servers from 40+ categories. Addresses evaluation challenges including diverse tool response formats, variable success rates across MCP servers, and context window limitations for tool descriptions.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2508.07575",
+      "references": [
+        "paper_011",
+        "paper_015"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "4000-MCP-server benchmark across 40 categories."
+      }
+    },
+    {
+      "id": "paper_047",
+      "title": "ScaleMCP: Dynamic and Auto-Synchronizing Model Context Protocol Tools for LLM Agents",
+      "authors": [
+        "Elias Lumer",
+        "Anmol Gulati",
+        "Vamse Kumar Subbiah",
+        "Pradeep Honaganahalli Basavaraju",
+        "James A. Burke"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2505.06416",
+      "abstract": "Dynamic tool selection approach with MCP tool retriever giving agents autonomy to add tools and auto-synchronizing storage via CRUD operations. Proposes Tool Document Weighted Average (TDWA) embedding strategy. Testing across 5,000 financial metric servers demonstrated substantial improvements.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2505.06416",
+      "references": [
+        "paper_011"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Dynamic MCP tool selection — addresses 'too many tools' scalability problem."
+      }
+    },
+    {
+      "id": "paper_048",
+      "title": "MCP-AgentBench: Evaluating Real-World Language Agent Performance with MCP-Mediated Tools",
+      "authors": [
+        "Zikang Guo",
+        "Benfeng Xu",
+        "Chiwei Zhu",
+        "Wentao Hong",
+        "Xiaorui Wang",
+        "Zhendong Mao"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2509.09734",
+      "abstract": "Comprehensive benchmark with 33 MCP servers (188 tools) and 600 systematically designed queries across six complexity categories. Introduces MCP-Eval, outcome-oriented evaluation prioritizing real-world task success over simulation metrics.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2509.09734",
+      "references": [
+        "paper_011"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Outcome-oriented MCP eval, 600 queries."
+      }
+    },
+    {
+      "id": "paper_054",
+      "title": "MCP Bridge: A Lightweight, LLM-Agnostic RESTful Proxy for Model Context Protocol Servers",
+      "authors": [
+        "Arash Ahmadi",
+        "Sarah Sharif",
+        "Yaser M. Banad"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2504.08999",
+      "abstract": "RESTful proxy exposing multiple MCP servers through unified API. Implements risk-based execution with three security levels. Fine-tuned Qwen3 models achieved F1 score of 73.0% on MCPToolBench++, outperforming GPT-OSS-120B.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2504.08999",
+      "references": [
+        "paper_042"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Local Qwen3 fine-tune beats GPT-OSS-120B on MCPToolBench++ — directly demonstrates competitive local MCP stack."
+      }
+    },
+    {
+      "id": "paper_055",
+      "title": "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
+      "authors": [
+        "Zhongming Yu",
+        "Hejia Zhang",
+        "Yujie Zhao",
+        "Hanxian Huang",
+        "Matrix Yao",
+        "Ke Ding",
+        "Jishen Zhao"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2502.00350",
+      "abstract": "Framework integrating priority-based scheduling and distance-aware context pruning, achieving 65.33% function match rate (SOTA) on SWE-bench Lite with 6.33 percentage point improvement integration.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2502.00350",
+      "references": [
+        "paper_002"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "SOTA on SWE-bench Lite (65.33%) via priority scheduling + distance-aware pruning."
+      }
+    },
+    {
+      "id": "paper_056",
+      "title": "AutoAgent: A Fully-Automated and Zero-Code Framework for LLM Agents",
+      "authors": [
+        "Jiabin Tang",
+        "Tianyu Fan",
+        "Chao Huang"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2502.05957",
+      "abstract": "Autonomous Agent Operating System enabling natural language agent creation. Comprehensive evaluations on the GAIA benchmark demonstrate AutoAgent's effectiveness in generalist multi-agent tasks, surpassing existing state-of-the-art methods.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2502.05957",
+      "references": [
+        "paper_009",
+        "paper_025"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Zero-code agent OS reaching GAIA SOTA."
+      }
+    },
+    {
+      "id": "paper_057",
+      "title": "Coding Agents with Multimodal Browsing are Generalist Problem Solvers",
+      "authors": [
+        "Aditya Bharat Soni",
+        "Boxuan Li",
+        "Xingyao Wang",
+        "Valerie Chen",
+        "Graham Neubig"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2506.03011",
+      "abstract": "OpenHands-Versa generalist agent with minimal tool set (code editing, web search, browsing, file access). Achieves superior or competitive performance over leading specialized agents across three diverse and challenging benchmarks: SWE-Bench Multimodal, GAIA, and The Agent Company.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2506.03011",
+      "references": [
+        "paper_005"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "OpenHands-Versa across SWE-Bench MM, GAIA, Agent Company — minimal-tool generalist evidence."
+      }
+    },
+    {
+      "id": "paper_058",
+      "title": "SmallThinker: A Family of Efficient Large Language Models Natively Trained for Local Deployment",
+      "authors": [
+        "Yixin Song",
+        "Zhenliang Xue",
+        "Dongliang Wei",
+        "Feiyang Chen",
+        "Jianxiang Gao",
+        "Junchen Liu",
+        "Hangyu Liang",
+        "Guangshuo Qin",
+        "Chengrong Tian",
+        "Bo Wen",
+        "Longyu Zhao",
+        "Xinrui Zheng",
+        "Zeyu Mi",
+        "Haibo Chen"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2507.20984",
+      "abstract": "Models architecturally designed for local deployment using sparse MoE with quantization support, exceeding 20 tokens/s on consumer CPUs with minimal memory footprint.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2507.20984",
+      "references": [
+        "paper_007"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "supplementary_arxiv",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "local_inference_and_edge_deployment"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Sparse-MoE 20 tok/s on consumer CPUs — direct local-inference contribution."
+      }
+    },
+    {
+      "id": "paper_060",
+      "title": "AWorld: Orchestrating the Training Recipe for Agentic AI",
+      "authors": [
+        "Chengyue Yu",
+        "Siyuan Lu",
+        "Chenyi Zhuang",
+        "Dong Wang",
+        "Qintong Wu",
+        "Zongyue Li",
+        "Runsheng Gan",
+        "Chunfeng Wang",
+        "Siqi Hou",
+        "Gaochi Huang",
+        "Wenlong Yan",
+        "Lifeng Hong",
+        "Aohui Xue",
+        "Yanfeng Wang",
+        "Jinjie Gu",
+        "David Tsai",
+        "Tao Lin"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2508.20404",
+      "abstract": "Open-source system for large-scale agent-environment interaction. Trained a Qwen3-32B-based agent that achieves pass@1 accuracy of 32.23% on the GAIA test set, which surpasses GPT-4o (27.91%).",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2508.20404",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "Open-source training recipe; Qwen3-32B beats GPT-4o on GAIA — strong open-weights evidence."
+      }
+    },
+    {
+      "id": "paper_062",
+      "title": "Efficient Agents: Building Effective Agents While Reducing Cost",
+      "authors": [
+        "Ningning Wang",
+        "Xavier Hu",
+        "Pai Liu",
+        "He Zhu",
+        "Yue Hou",
+        "Heyuan Huang",
+        "Shengyu Zhang",
+        "Jian Yang",
+        "Jiaheng Liu",
+        "Ge Zhang",
+        "Changwang Zhang",
+        "Jun Wang",
+        "Yuchen Eleanor Jiang",
+        "Wangchunshu Zhou"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2508.02694",
+      "abstract": "Systematic study of efficiency-effectiveness trade-off in agent systems using GAIA benchmark. Efficient Agents framework retains 96.7% of the performance of OWL while reducing operational costs from $0.398 to $0.228, resulting in a 28.4% improvement.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2508.02694",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 4.0,
+        "tier": 2,
+        "rationale": "96.7% performance at 57% cost on GAIA — efficiency-effectiveness frontier evidence."
+      }
+    },
+    {
+      "id": "paper_004",
+      "title": "Evaluation and Benchmarking of LLM Agents: A Survey",
+      "authors": [
+        "Mahmoud Mohammadi",
+        "Yipeng Li",
+        "Jane C. Lo",
+        "Wendy Yip"
+      ],
+      "year": 2025,
+      "journal": "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+      "doi": "10.1145/3711896.3736570",
+      "url": "https://openalex.org/W4412877164",
+      "abstract": "The emergence of LLM-based agents has opened new frontiers in AI, yet evaluating them remains complex and underdeveloped. This survey provides an in-depth overview of LLM agent evaluation through a two-dimensional taxonomy: evaluation objectives (behavior, capabilities, reliability, safety) and evaluation processes (interaction modes, datasets, metrics, tooling).",
+      "citation_count": 20,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4412877164",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_002",
+        "paper_005"
+      ],
+      "cited_by": [
+        "paper_017",
+        "paper_025"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 2,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "benchmarks_and_evaluation"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 4,
+        "recency_impact": 3,
+        "composite": 3.8,
+        "tier": 3,
+        "rationale": "ACM KDD eval-taxonomy survey; useful framing reference."
+      }
+    },
+    {
+      "id": "paper_014",
+      "title": "A survey of agent interoperability protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)",
+      "authors": [
+        "Abul Ehtesham",
+        "Aditi Singh",
+        "Gaurav Kumar Gupta",
+        "Saket Kumar"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2505.02279",
+      "abstract": "Comprehensive survey comparing four agent communication protocols. Proposes phased adoption roadmap beginning with MCP for tool access, progressing through ACP for multimodal messaging, A2A for collaborative task execution, and ANP for decentralized marketplaces.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2505.02279",
+      "references": [
+        "paper_011",
+        "paper_013"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 3,
+        "recency_impact": 4,
+        "composite": 3.7,
+        "tier": 3,
+        "rationale": "Comparative protocol survey across MCP/ACP/A2A/ANP; preprint-light but topically central."
+      }
+    },
+    {
+      "id": "paper_024",
+      "title": "ByteRover: Agent-Native Memory Through LLM-Curated Hierarchical Context",
+      "authors": [
+        "Andy Nguyen",
+        "Danh Doan",
+        "Hoang Pham",
+        "Bao Ha",
+        "Dat Pham",
+        "Linh Nguyen",
+        "Hieu Nguyen",
+        "Thien Nguyen",
+        "Cuong Do",
+        "Phat Nguyen",
+        "Toan Nguyen"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2604.01599",
+      "abstract": "Memory-Augmented Generation (MAG) extends large language models with external memory to support long-context reasoning, but existing approaches universally treat memory as an external service.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2604.01599",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 3,
+        "recency_impact": 4,
+        "composite": 3.7,
+        "tier": 3,
+        "rationale": "Memory-Augmented Generation framing; brief abstract limits quality assessment."
+      }
+    },
+    {
+      "id": "paper_026",
+      "title": "Toward Formalizing LLM-Based Agent Designs through Structural Context Modeling and Semantic Dynamics Analysis",
+      "authors": [
+        "Haoyu Jia",
+        "Kento Kawaharazuka",
+        "Kei Okada"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2602.08276",
+      "abstract": "Proposes formal Structural Context Model with declarative framework and Semantic Dynamics Analysis workflow, achieving 32 percentage points improvement on dynamic problem-solving tasks.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2602.08276",
+      "references": [
+        "paper_001"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 3,
+        "recency_impact": 4,
+        "composite": 3.7,
+        "tier": 3,
+        "rationale": "Structural Context Model — formalism-leaning contribution."
+      }
+    },
+    {
+      "id": "paper_045",
+      "title": "CEDAR: Context Engineering for Agentic Data Science",
+      "authors": [
+        "Rishiraj Saha Roy",
+        "Chris Hinze",
+        "Luzian Hahn",
+        "Fabian Kuech"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": "10.1007/978-3-032-21321-1_29",
+      "url": "https://arxiv.org/abs/2601.06606",
+      "abstract": "Demonstrates application automating data science tasks through structured prompts, interleaved plan and code blocks, and smart history rendering with fault tolerance mechanisms.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2601.06606",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 3,
+        "recency_impact": 4,
+        "composite": 3.7,
+        "tier": 3,
+        "rationale": "Domain-specific (data science) context engineering."
+      }
+    },
+    {
+      "id": "paper_007",
+      "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+      "authors": [
+        "Ji Lin",
+        "Jiaming Tang",
+        "Haotian Tang",
+        "Shang Yang",
+        "Wei-Ming Chen",
+        "Wei-Chen Wang",
+        "Guangxuan Xiao",
+        "Xingyu Dang",
+        "Chuang Gan",
+        "Song Han"
+      ],
+      "year": 2023,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2306.00978",
+      "abstract": "Proposes activation-aware weight quantization for efficient LLM deployment on edge devices by identifying and protecting salient weight channels while scaling others, achieving 3x speedup on mobile GPUs.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2306.00978",
+      "references": [],
+      "cited_by": [
+        "paper_046",
+        "paper_058"
+      ],
+      "is_seed_paper": false,
+      "found_via": "supplementary_arxiv",
+      "citation_network": {
+        "in_degree": 2,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "local_inference_and_edge_deployment"
+      },
+      "screening": {
+        "relevance": 3,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 3.5,
+        "tier": 3,
+        "rationale": "Widely used quantization technique; building block for local inference."
+      }
+    },
+    {
+      "id": "paper_039",
+      "title": "Autono: A ReAct-Based Highly Robust Autonomous Agent Framework",
+      "authors": [
+        "Zihao Wu"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2504.04650",
+      "abstract": "Framework for autonomous agents using ReAct paradigm with adaptive decision-making and multi-agent collaboration. Features timely abandonment strategy with probabilistic penalties, memory transfer mechanism, and external tool integration via MCP protocol.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2504.04650",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 3,
+        "recency_impact": 3,
+        "composite": 3.5,
+        "tier": 3,
+        "rationale": "ReAct + MCP framework; single-author."
+      }
+    },
+    {
+      "id": "paper_040",
+      "title": "Cerebrum (AIOS SDK): A Platform for Agent Development, Deployment, Distribution, and Discovery",
+      "authors": [
+        "Balaji Rama",
+        "Kai Mei",
+        "Yongfeng Zhang"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2503.11444",
+      "abstract": "Agent SDK featuring modular four-layer architecture for development, community-driven Agent Hub for sharing, and interactive web interface. Demonstrates implementations of CoT, ReAct, and tool-use agent architectures.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2503.11444",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 4,
+        "quality": 3,
+        "recency_impact": 3,
+        "composite": 3.5,
+        "tier": 3,
+        "rationale": "Platform/SDK paper — moderate empirical depth."
+      }
+    },
+    {
+      "id": "paper_043",
+      "title": "MCP Safety Audit: LLMs with the Model Context Protocol Allow Major Security Exploits",
+      "authors": [
+        "Brandon Radosevich",
+        "John Halloran"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2504.03767",
+      "abstract": "Demonstrates LLMs can be coerced into using MCP tools for malicious code execution, remote access, and credential theft. Introduces MCPSafetyScanner, an agentic tool that automatically determines adversarial samples, searches for vulnerabilities, and generates security reports.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2504.03767",
+      "references": [
+        "paper_011"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 3,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 3.5,
+        "tier": 3,
+        "rationale": "MCP security — rigorous demonstrations, but security-only focus reduces architectural relevance."
+      }
+    },
+    {
+      "id": "paper_044",
+      "title": "Autellix: An Efficient Serving Engine for LLM Agents as General Programs",
+      "authors": [
+        "Michael Luo",
+        "Xiaoxiang Shi",
+        "Colin Cai",
+        "Tianjun Zhang",
+        "Justin Wong",
+        "Yichuan Wang",
+        "Chi Wang",
+        "Yanping Huang",
+        "Zhifeng Chen",
+        "Joseph E. Gonzalez",
+        "Ion Stoica"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2502.13965",
+      "abstract": "LLM serving system treating programs as first-class citizens with program-aware scheduling algorithms, improving program throughput by 4-15x compared to state-of-the-art systems.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2502.13965",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "context_and_memory_engineering"
+      },
+      "screening": {
+        "relevance": 3,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 3.5,
+        "tier": 3,
+        "rationale": "Serving infrastructure — adjacent to agent architecture."
+      }
+    },
+    {
+      "id": "paper_049",
+      "title": "Optimizing FaaS Platforms for MCP-enabled Agentic Workflows",
+      "authors": [
+        "Varad Kulkarni",
+        "Vaibhav Jha",
+        "Nikhil Reddy",
+        "Anand Eswaran",
+        "Praveen Jayachandran",
+        "Yogesh Simmhan"
+      ],
+      "year": 2026,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2601.14735",
+      "abstract": "FAME architecture decomposing ReAct patterns into composable FaaS functions (Planner, Actor, Evaluator) orchestrated as workflows. Achieves 13x latency reduction, 88% fewer input tokens, and 66% cost savings with improved completion rates.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2601.14735",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "coding_agents_and_harness"
+      },
+      "screening": {
+        "relevance": 3,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 3.5,
+        "tier": 3,
+        "rationale": "FaaS / serverless ReAct decomposition — infrastructure adjacent."
+      }
+    },
+    {
+      "id": "paper_050",
+      "title": "MCP-Guard: A Multi-Stage Defense-in-Depth Framework for Securing Model Context Protocol in Agentic AI",
+      "authors": [
+        "Wenpeng Xing",
+        "Zhonghao Qi",
+        "Yupeng Qin",
+        "Yilin Li",
+        "Caini Chang",
+        "Jiahui Yu",
+        "Changting Lin",
+        "Zhenzhen Xie",
+        "Meng Han"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2508.10991",
+      "abstract": "Three-stage detection pipeline with static scanning, deep neural detector, and fine-tuned E5 model achieving 96.01% accuracy in identifying adversarial prompts. Includes MCP-AttackBench with 70,448 samples simulating real-world attack vectors.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2508.10991",
+      "references": [
+        "paper_011"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 3,
+        "quality": 4,
+        "recency_impact": 4,
+        "composite": 3.5,
+        "tier": 3,
+        "rationale": "MCP security defense — useful but security-axis."
+      }
+    },
+    {
+      "id": "paper_051",
+      "title": "Beyond the Protocol: Unveiling Attack Vectors in the Model Context Protocol (MCP) Ecosystem",
+      "authors": [
+        "Hao Song",
+        "Yiming Shen",
+        "Wenxuan Luo",
+        "Leixin Guo",
+        "Ting Chen",
+        "Jiashui Wang",
+        "Beibei Li",
+        "Xiaosong Zhang",
+        "Jiachi Chen"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2506.02040",
+      "abstract": "First end-to-end empirical evaluation of MCP attack vectors identifying four categories: Tool Poisoning, Puppet, Rug Pull, and Exploitation via Malicious Resources. User study with 20 participants demonstrates difficulty identifying malicious servers.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2506.02040",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 2.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 3.0,
+        "tier": 3,
+        "rationale": "MCP attack-vector taxonomy with N=20 user study; included via Checkpoint 2 because MCP security is a legitimate SOTA pillar for local agentic systems.",
+        "manually_included": true,
+        "manual_inclusion_note": "Borderline (composite 3.00) — promoted at Checkpoint 2 as MCP security pillar evidence"
+      }
+    },
+    {
+      "id": "paper_052",
+      "title": "MCP Security Bench (MSB): Benchmarking Attacks Against Model Context Protocol in LLM Agents",
+      "authors": [
+        "Dongsen Zhang",
+        "Zekun Li",
+        "Xu Luo",
+        "Xuannan Liu",
+        "Peipei Li",
+        "Wenjun Xu"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2510.15994",
+      "abstract": "First end-to-end evaluation suite measuring LLM agent resistance to MCP-specific attacks. Presents taxonomy of 12 attacks across task planning, tool invocation, and response handling stages. Evaluates nine agents across 10 domains with 405 tools, producing 2,000 attack instances.",
+      "citation_count": null,
+      "sources_found_in": [
+        "arxiv"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2510.15994",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "mcp_and_tool_protocols"
+      },
+      "screening": {
+        "relevance": 2.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 3.0,
+        "tier": 3,
+        "rationale": "First empirical MCP security benchmark (12 attacks × 9 agents × 10 domains); included via Checkpoint 2 as canonical benchmark for the MCP security pillar.",
+        "manually_included": true,
+        "manual_inclusion_note": "Borderline (composite 3.00) — promoted at Checkpoint 2 as MCP security benchmark"
+      }
+    }
+  ]
+}
