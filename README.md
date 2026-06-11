@@ -108,9 +108,15 @@ ANTHROPIC_BASE_URL=http://host.docker.internal:11434
 
 第一次 build 要下載基底映像，會花幾分鐘。
 
+> ⚠️ **每個 clone 都要自己 build，不能共用別台機器的 image。**
+> Image 名稱是 `nanoclaw-agent-v2-<hash>`，其中 hash 由「專案的絕對路徑」算出（讓同機多個 checkout 不互相干擾）。換機器、換路徑、或搬移/改名專案資料夾，host 期待的 image 名稱就不同 — 重跑 `./container/build.sh` 即可。
+
 ### 4. 啟動 host（terminal 1，保持開著）
 
+第一次啟動前要先蓋「升級標記」。NanoClaw 啟動時會檢查 `data/upgrade-state.json`，沒有它會直接拒絕啟動（`Upgrade tripwire: install not on the sanctioned path`）— 這個標記正常由官方 setup 流程產生，我們走捷徑所以手動蓋：
+
 ```bash
+pnpm exec tsx scripts/upgrade-state.ts set   # 只需做一次
 pnpm run dev
 ```
 
@@ -118,7 +124,11 @@ pnpm run dev
 
 ### 5. 建立第一個 CLI agent（terminal 2，只需做一次）
 
+> ⚠️ 新開的 terminal 記得也要先 `cd` 進 `nanoclaw/` 目錄，否則會報
+> `ERR_PNPM_NO_PKG_MANIFEST: No package.json found`。
+
 ```bash
+cd LocalizeAgenticSys/nanoclaw   # 路徑依你 clone 的位置調整
 pnpm exec tsx scripts/init-cli-agent.ts --display-name "你的名字" --agent-name "Andy"
 ```
 
@@ -140,6 +150,10 @@ pnpm run talk
 | 送出訊息後完全沒回應 | 看 `logs/nanoclaw.error.log`；常見原因是容器映像沒 build（步驟 3）或 `.env` 憑證錯誤 |
 | `OneCLI gateway not applied — refusing to spawn` | `.env` 少了 `NANOCLAW_NATIVE_CREDENTIALS=true`（沒有它就會走 OneCLI 金庫路線） |
 | 第一輪等很久才回 | 正常 — 冷啟動最長可達數分鐘（本地模型尤其明顯），`talk` 的單輪 timeout 是 3 分鐘 |
+| `ERR_PNPM_NO_PKG_MANIFEST: No package.json found` | 指令不是在 `nanoclaw/` 目錄下跑的 — 先 `cd` 進去 |
+| `Circuit breaker: delaying startup due to repeated crashes` | host 之前連續 crash 觸發的保護機制。用 Ctrl-C 乾淨關閉會重置計數（看到 `Circuit breaker reset on clean shutdown`），重跑 `pnpm run dev` 即可。若再 crash，去 `logs/nanoclaw.error.log` 找根本原因 |
+| `Upgrade tripwire: install not on the sanctioned path` | fresh clone 沒有升級標記 — 跑 `pnpm exec tsx scripts/upgrade-state.ts set` 後重啟（見步驟 4）。注意：若你是用 `git pull` 拉新版後出現這個，不要手動蓋標記，改用 `/update-nanoclaw` 正規升級 |
+| 容器啟動失敗 / 找不到 image（`nanoclaw-agent-v2-xxxxxxxx`） | image 名稱的 hash 綁定專案絕對路徑 — 別台機器 build 的 image、或專案資料夾搬移/改名後，名稱都對不上。在現在的路徑重跑 `./container/build.sh` |
 
 ## Philosophy
 
