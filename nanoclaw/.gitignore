@@ -23,7 +23,8 @@ groups/*
 # Secrets
 *.keys.json
 .env
-.env*
+.env.*
+!.env.example
 
 # Temp files
 .tmp-*
@@ -37,5 +38,10 @@ groups/*
 
 # Skills system (local per-installation state)
 .nanoclaw/
+
+# Claude Code per-installation state (.claude/skills stays tracked)
+.claude/settings.json
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
 
 agents-sdk-docs

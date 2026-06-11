@@ -56,6 +56,91 @@ See [docs/v1-to-v2-changes.md](docs/v1-to-v2-changes.md) for what's different an
 
 </details>
 
+## 本專案教學：從 Clone 到 `pnpm run talk`
+
+> 這是本 fork（LocalizeAgenticSys）的最短上手路徑：clone 下來、在終端機跟 agent 對話。
+> 上游官方的完整安裝流程是 `bash nanoclaw.sh`（會走 OneCLI 憑證金庫）；下面的步驟改用 `.env` 直接帶憑證（native credentials），不需要安裝 OneCLI。
+
+### 0. 前置需求
+
+- **Node.js 22**（見 `nanoclaw/.nvmrc`）與 **pnpm 10**（`corepack enable` 或 `npm i -g pnpm`）
+- **Docker Desktop**（必須先啟動 — agent 是跑在容器裡的）
+- （可選）**Ollama** — 想完全本地推論才需要
+
+### 1. Clone 並安裝相依套件
+
+```bash
+git clone https://github.com/roseDwayane/LocalizeAgenticSys.git
+cd LocalizeAgenticSys/nanoclaw
+pnpm install
+```
+
+### 2. 設定 `.env`
+
+```bash
+cp .env.example .env
+```
+
+打開 `.env`，二選一：
+
+**A. 用 Anthropic 憑證（最簡單）**
+
+```bash
+NANOCLAW_NATIVE_CREDENTIALS=true
+ANTHROPIC_API_KEY=sk-ant-...        # 或改填 CLAUDE_CODE_OAUTH_TOKEN=...
+```
+
+**B. 用本地 Ollama（零 API 費用）**
+
+```bash
+NANOCLAW_NATIVE_CREDENTIALS=true
+ANTHROPIC_API_KEY=ollama            # 佔位用，Ollama 不驗證
+ANTHROPIC_BASE_URL=http://host.docker.internal:11434
+```
+
+並確認 Ollama 在跑、模型已拉好（例如 `ollama pull gemma4`）。模型選擇與 prompt cache 加速等細節見 [nanoclaw/docs/ollama.md](nanoclaw/docs/ollama.md)。
+
+### 3. Build agent 容器映像
+
+```bash
+./container/build.sh
+```
+
+第一次 build 要下載基底映像，會花幾分鐘。
+
+### 4. 啟動 host（terminal 1，保持開著）
+
+```bash
+pnpm run dev
+```
+
+啟動後 host 會在 `data/cli.sock` 開出 CLI channel 的 Unix socket。
+
+### 5. 建立第一個 CLI agent（terminal 2，只需做一次）
+
+```bash
+pnpm exec tsx scripts/init-cli-agent.ts --display-name "你的名字" --agent-name "Andy"
+```
+
+這會建立 `cli:local` 使用者（並授予 owner）、建立 agent group、把它接上 CLI channel。host 不用重啟。
+
+### 6. 開始對話
+
+```bash
+pnpm run talk
+```
+
+打字、按 Enter、等回覆。第一輪會比較慢（容器冷啟動 + 模型載入）。輸入 `/exit` 離開。
+
+### 常見問題
+
+| 症狀 | 原因 / 解法 |
+|------|------------|
+| `connect ENOENT .../data/cli.sock` | host 沒在跑 — 回到步驟 4 |
+| 送出訊息後完全沒回應 | 看 `logs/nanoclaw.error.log`；常見原因是容器映像沒 build（步驟 3）或 `.env` 憑證錯誤 |
+| `OneCLI gateway not applied — refusing to spawn` | `.env` 少了 `NANOCLAW_NATIVE_CREDENTIALS=true`（沒有它就會走 OneCLI 金庫路線） |
+| 第一輪等很久才回 | 正常 — 冷啟動最長可達數分鐘（本地模型尤其明顯），`talk` 的單輪 timeout 是 3 分鐘 |
+
 ## Philosophy
 
 **Small enough to understand.** One process, a few source files and no microservices. If you want to understand the full NanoClaw codebase, just ask Claude Code to walk you through it.

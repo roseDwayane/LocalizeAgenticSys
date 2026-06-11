@@ -207,7 +207,9 @@ __marimo__/
 
 .DS_Store
 .obsidian/
-.claude/
+# Anchored to repo root only — nanoclaw/.claude/skills must stay tracked
+/.claude/
 claudecode/
 loaclllm/
 openclaw/
+full_pdf/
